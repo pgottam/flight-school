@@ -1,0 +1,16 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: ubuntu}
+
+inputs:
+- name: flight-school
+
+run:
+  path: sh
+  args:
+  - -exec
+  - |
+    echo "hello world"
+    uname -a
